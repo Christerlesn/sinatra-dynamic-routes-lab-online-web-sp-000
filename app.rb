@@ -19,5 +19,5 @@ class App < Sinatra::Base
     puts "#{params[:phrase]}"
     end
   end
-  
+
 end #end of class
