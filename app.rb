@@ -21,7 +21,6 @@ class App < Sinatra::Base
       "Sup"
       i +=1
     end
-    n
   end
 
 end #end of class
