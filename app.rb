@@ -28,7 +28,7 @@ class App < Sinatra::Base
       when "subtract"
         (@num - @num2).to_s
       when "add"
-        (@num + @num2)
+        (@num + @num2).to_s
       end
   end
 
