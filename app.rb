@@ -27,7 +27,7 @@ class App < Sinatra::Base
     case @op
       when "subtract"
         (@num - @num2).to_s
-      when "add"
+      when "add"  || "addition"
         (@num + @num2).to_s
       end
   end
