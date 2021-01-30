@@ -15,9 +15,8 @@ class App < Sinatra::Base
   end
 
   get '/say/:number' do
-    @num = "#{params[:number].to_i}"
+    @num = params[:number].to_i
     @num
-    end
 
   end
 
