@@ -24,9 +24,10 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num = params[:number1].to_i
     @num2 = params[:number2].to_i
-  when "subtract"
-    (@num - @num2).to_s
-  end
+    case @op
+      when "subtract"
+        (@num - @num2).to_s
+      end
   end
 
 end #end of class
