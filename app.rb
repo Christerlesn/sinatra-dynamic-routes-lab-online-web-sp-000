@@ -17,7 +17,7 @@ class App < Sinatra::Base
   get '/say/:number' do
     @num = params[:number].to_i
     i = 0
-    until i == @num do
+    until i > @num do
       "Sup"
       i +=1
     end
