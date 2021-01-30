@@ -20,13 +20,11 @@ class App < Sinatra::Base
     "#{params[:word5]}"
   end
 
-  get '/:operation' do
+  get '/:operation/:number1/:number2' do
     @op = params[:operation].to_s
-    @op
-    test = 1 @op 1
-    "1" + "#{@op}" + "1"
-    # @num = params[:number1].to_i
-    # @num2 = params[:number2].to_i
+    @num = params[:number1].to_i
+    @num2 = params[:number2].to_i
+    @num @op @num2
   end
 
 end #end of class
