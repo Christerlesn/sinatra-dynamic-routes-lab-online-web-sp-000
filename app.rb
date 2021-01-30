@@ -21,7 +21,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation' do
-    @o = :operation.to_i
+    @o = :operation
     @o
   end
 
