@@ -25,7 +25,7 @@ class App < Sinatra::Base
     # @num = params[:number1].to_i
     # @num2 = params[:number2].to_i
     # test = "#{@num}" "#{@op}" "#{@num2}"
-    "#{params[:number1].to_i + params[:operation].to_s + params[:number2].to_i}"
+    "#{params[:number1].to_i params[:operation].to_s params[:number2].to_i}"
   end
 
 end #end of class
