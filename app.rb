@@ -19,7 +19,7 @@ class App < Sinatra::Base
     end
   end
 
-  get '/say/:word1/' do
+  get '/say/:word1' do
     "#{params[:word1]}"
   end
 
