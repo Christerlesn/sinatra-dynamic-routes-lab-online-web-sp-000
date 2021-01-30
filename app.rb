@@ -16,8 +16,11 @@ class App < Sinatra::Base
 
   get '/say/:number' do
     @num = params[:number].to_i
-    @num.times do
-      "hi"
+    i = 0
+    until i > @num do
+      puts "Sup"
+      i +=1
+    end
     end
 
   end
