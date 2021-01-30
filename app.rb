@@ -24,7 +24,7 @@ class App < Sinatra::Base
     @op = params[:operation].to_s
     @op
     test = 1 @op 1
-    "1" + "#{op}" + "1"
+    "#{1.to_i}" + "#{@op}" + "#{1.to_i}"
     # @num = params[:number1].to_i
     # @num2 = params[:number2].to_i
   end
