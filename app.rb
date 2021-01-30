@@ -15,7 +15,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number' do
-    params[:number].times do |sentence|
+    params[:number].to_i.times do |sentence|
       print "Sup"
     end
   end
