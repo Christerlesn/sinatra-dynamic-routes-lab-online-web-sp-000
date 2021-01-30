@@ -20,4 +20,8 @@ class App < Sinatra::Base
     "#{params[:word5]}"
   end
 
+  get '/:operation' do
+    @o = :operation.to_i
+  end
+
 end #end of class
