@@ -16,7 +16,7 @@ class App < Sinatra::Base
 
   get '/say/:word1' do
     @word = params[:word1]
-    "#{@word}"
+    "#{params[:word1]}"
   end
 
 end #end of class
