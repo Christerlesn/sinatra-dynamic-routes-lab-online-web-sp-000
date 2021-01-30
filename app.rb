@@ -25,7 +25,6 @@ class App < Sinatra::Base
     @num = params[:number1].to_i
     @num2 = params[:number2].to_i
     test = "#{@num}" "#{@op}" "#{@num2}"
-    test.to_s
   end
 
 end #end of class
